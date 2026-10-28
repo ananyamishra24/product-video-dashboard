@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./backend
+    env_file: ./backend/.env
+    environment:
+      DB_PATH: /data/app.db
+    volumes: ["pvd-data:/data"]
+    ports: ["4000:4000"]
+  frontend:
+    build: ./frontend
+    ports: ["8080:80"]
+    depends_on: [backend]
+volumes:
+  pvd-data:
