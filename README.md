@@ -81,8 +81,8 @@ BullMQ + Redis worker · CLIP embeddings as a cheap pre-filter · multi-frame sc
 | Product | Instagram | Meta Ad Library |
 |---|---|---|
 | oversized graphic tee | 20 | 20 |
-
-
+  white sneakers | 20 | 20 |
+  vitamin c serum | 20 | 20 |
 ## Known limitations
 - Only one product (oversized graphic tee) was fully tested end to end; the assignment asks for five, and I ran out of time to run the rest.
 - Instagram and Meta collection returned 20 and 20 videos for that search.
