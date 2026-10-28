@@ -74,3 +74,17 @@ Good / bad match examples: paste from eval output + add screenshots.
 
 ## Next steps
 BullMQ + Redis worker · CLIP embeddings as a cheap pre-filter · multi-frame scoring · TikTok collector · per-user history · Playwright fallback for Ad Library.
+
+
+## Test results
+
+| Product | Instagram | Meta Ad Library |
+|---|---|---|
+| oversized graphic tee | 20 | 20 |
+| white sneakers | ? | ? |
+
+## Known limitations
+
+- Instagram and Meta collection returned about 20 videos each per search.
+- The Gemini API returned temporary 503 and 429 errors during testing, so some runs had no match scores.
+- Next steps: automatic retries with backoff, a fallback model, and image embeddings for scoring.
