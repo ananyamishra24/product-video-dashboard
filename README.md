@@ -81,10 +81,10 @@ BullMQ + Redis worker · CLIP embeddings as a cheap pre-filter · multi-frame sc
 | Product | Instagram | Meta Ad Library |
 |---|---|---|
 | oversized graphic tee | 20 | 20 |
-| white sneakers | ? | ? |
+
 
 ## Known limitations
-
-- Instagram and Meta collection returned about 20 videos each per search.
-- The Gemini API returned temporary 503 and 429 errors during testing, so some runs had no match scores.
-- Next steps: automatic retries with backoff, a fallback model, and image embeddings for scoring.
+- Only one product (oversized graphic tee) was fully tested end to end; the assignment asks for five, and I ran out of time to run the rest.
+- Instagram and Meta collection returned 20 and 20 videos for that search.
+- The Gemini API returned temporary 503 and 429 errors during testing, so some runs showed "Scoring unavailable" and a score of 0.
+- A search with an uploaded photo produced real scores only after switching the model to gemini-3.5-flash-lite.
